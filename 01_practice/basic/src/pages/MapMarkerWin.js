@@ -18,16 +18,22 @@ function MapMarkerWin() {
         setKakaoMap(map);
         const markerPosition = new kakao.maps.LatLng(latitude, longitude );
         const marker = new kakao.maps.Marker({
-            position: markerPosition
+            position: markerPosition,
+            clickable: true
         });
         marker.setMap(map);
         const iwContent = '<div style="padding:5px;"><p>류니끄</p><br><p>서울특별시 강남구 강남대로 162길 40</p></div>';
+        const iwRemoveable = true;
         const iwPosition = new kakao.maps.LatLng(latitude, longitude);
         const infowindow = new kakao.maps.InfoWindow({
-            position : iwPosition,
-            content : iwContent
+            // position : iwPosition,
+            // content : iwContent
+            content : iwContent,
+            removable : iwRemoveable
         });
-        infowindow.open(map, marker);
+        kakao.maps.event.addListener(marker, 'click', function() {
+            infowindow.open(map, marker);
+        } );
     },
     []
     )
