@@ -6,6 +6,7 @@ import MapMove from './pages/MapMove';
 import MapLevelChange from './pages/MapLevelChange';
 import MapMarker from './pages/MapMarker';
 import MapMarkerWin from './pages/MapMarkerWin';
+import CalendarBasic from './pages/CalendarBasic';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path='maplevelchange' element={<MapLevelChange/>}/>
           <Route path='mapmarker' element={<MapMarker/>}/>
           <Route path='mapmarkerwin' element={<MapMarkerWin/>}/>
+          <Route path='calendar' element={<CalendarBasic/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
