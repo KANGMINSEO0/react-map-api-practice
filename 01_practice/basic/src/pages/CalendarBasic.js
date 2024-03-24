@@ -48,8 +48,8 @@ function CalendarBasic() {
             </div>
             <div className={styles.countBox}>
                 <button id={styles.countButton} onClick={onClickMinus}>-</button>
-                <div>
-                    <p>&nbsp;{count}&nbsp;</p>
+                <div className={styles.numberBox}>
+                    <div id={styles.countNumber}>&nbsp;{count}&nbsp;</div>
                 </div>
                 <button id={styles.countButton} onClick={onClickPlus}>+</button>
             </div>

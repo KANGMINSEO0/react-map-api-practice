@@ -16,6 +16,8 @@ function Navbar() {
                 <li><NavLink to="/mapmarker" style={({isActive}) => isActive? activeStyle: undefined}>Map Marker</NavLink></li>
                 <li><NavLink to="/mapmarkerwin" style={({isActive}) => isActive? activeStyle: undefined}>Map Marker Window</NavLink></li>
                 <li><NavLink to="/calendar" style={({isActive}) => isActive? activeStyle: undefined}>캘린더 보기</NavLink></li>
+                <li><NavLink to="/calendardf" style={({isActive}) => isActive? activeStyle: undefined}>캘린더 데이트피커 보기</NavLink></li>
+                <li><NavLink to="/calendarip" style={({isActive}) => isActive? activeStyle: undefined}>캘린더 눌러서 보기</NavLink></li>
             </ul>
         </div>
     );

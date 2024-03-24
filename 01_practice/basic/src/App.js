@@ -7,6 +7,8 @@ import MapLevelChange from './pages/MapLevelChange';
 import MapMarker from './pages/MapMarker';
 import MapMarkerWin from './pages/MapMarkerWin';
 import CalendarBasic from './pages/CalendarBasic';
+import CalendarDatePicker from './pages/CalendarDatePicker';
+import CalendarInput from './pages/CalendarInput';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
           <Route path='mapmarker' element={<MapMarker/>}/>
           <Route path='mapmarkerwin' element={<MapMarkerWin/>}/>
           <Route path='calendar' element={<CalendarBasic/>}/>
+          <Route path='calendardf' element={<CalendarDatePicker/>}/>
+          <Route path='calendarip' element={<CalendarInput/>}/>
         </Route>
       </Routes>
     </BrowserRouter>

@@ -1,0 +1,8 @@
+.datePickerBox {
+    margin-left: 10%;
+}
+
+.react-datepicker__day--outside-month {
+    color: #a8a8a8 !important;
+    pointer-events: none;
+}
